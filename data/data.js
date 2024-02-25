@@ -10,7 +10,8 @@ export const products = [
         Discount: 25,
         Size: "S-XL",
         Idealfor: "Work, formal events, weddings",
-        Rating: 4.85
+        Rating: 4.85,
+        Qty: 1
     },
     {
         ProductID: "002",
@@ -23,7 +24,8 @@ export const products = [
         Discount: 20,
         Size: "24-32",
         Idealfor: "Everyday wear, casual outings",
-        Rating: 4.7
+        Rating: 4.7,
+        Qty: 1
     },
     {
         ProductID: "003",
@@ -36,7 +38,8 @@ export const products = [
         Discount: 8,
         Size: "6.1 inches",
         Idealfor: "Tech enthusiasts, photography lovers, gamers",
-        Rating: 4.9
+        Rating: 4.9,
+        Qty: 1
     },
     {
         ProductID: "004",
@@ -49,7 +52,8 @@ export const products = [
         Discount: 10,
         Size: "13.4 inches",
         Idealfor: "Students, professionals, content creators",
-        Rating: 4.6
+        Rating: 4.6,
+        Qty: 1
     },
     {
         ProductID: "005",
@@ -62,7 +66,8 @@ export const products = [
         Discount: 7,
         Size: "40mm or 44mm",
         Idealfor: "Fitness enthusiasts, health trackers, smartwatch lovers",
-        Rating: 4.5
+        Rating: 4.5,
+        Qty: 1
     },
     {
         ProductID: "006",
@@ -75,7 +80,8 @@ export const products = [
         Discount: 9,
         Size: "One size",
         Idealfor: "Gamers, families, entertainment enthusiasts",
-        Rating: 4.8
+        Rating: 4.8,
+        Qty: 1
     },
     {
         ProductID: "007",
@@ -88,7 +94,8 @@ export const products = [
         Discount: 17,
         Size: "6 quarts",
         Idealfor: "Busy cooks, families, healthy eaters",
-        Rating: 4.7
+        Rating: 4.7,
+        Qty: 1
     },
     {
         ProductID: "008",
@@ -101,7 +108,8 @@ export const products = [
         Discount: 20,
         Size: "One size (adjustable)",
         Idealfor: "Commuters, travelers, music lovers, focused work",
-        Rating: 4.4
+        Rating: 4.4,
+        Qty: 1
     },
     {
         ProductID: "009",
@@ -114,6 +122,7 @@ export const products = [
         Discount: 17,
         Size: "One size",
         Idealfor: "Home automation enthusiasts, music lovers, convenience seekers",
-        Rating: 4.2
+        Rating: 4.2,
+        Qty: 1
     }
 ];
