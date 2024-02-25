@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,body{
+    min-height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #111;
+}
+
+header .searchInput{
+    padding: 5px;
+    border-radius: 20px;
+    border:none;
+    border-bottom: 2px solid #000;
+}
+
+#productsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2vh 0;
+    justify-items: center;
+    background-color: green;
+}
+.star{
+    color: orange;
+}
+.card-image-container img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    background-color: white;
+}
