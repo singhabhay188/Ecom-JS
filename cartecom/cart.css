@@ -11,23 +11,24 @@ html,body{
 
 main{
     padding: 2vh min(2vw,10px);
-    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 #productsContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-    padding: 2vh 0;
-    justify-items: center;
+    width: max-content;
     background-color: green;
+}
+#productsContainer .card-horizontal{
+    
+}
+#productsContainer .card-hori-image-container img{
+    object-fit: contain;
 }
 .star{
     color: orange;
-}
-.card-image-container img{
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
-    background-color: white;
 }

@@ -1,20 +1,31 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 import {productLoader} from '../data/productLoader.js';
+import {productLoaderHorizontal} from '../data/productLoader.js';
 
 let productsContainer = document.getElementById("productsContainer");
 
-productLoader(cart,productsContainer,false);
+productLoaderHorizontal(cart,productsContainer);
 
 productsContainer.addEventListener("click", function(e){
     let ele = e.target;
-    if(ele.tagName !== "BUTTON"){
-        ele = ele.parentElement;
-    }
     if(ele.tagName === "BUTTON"){
+        //check if button clicked is for removing item or not
         let cid = ele.id;
-        cart = cart.filter(p => p.ProductID !== cid);
-        localStorage.setItem("cart", JSON.stringify(cart));
-        productLoader(cart,productsContainer,"Remove from Cart");
+        if(cid.length === 3){
+            cart = cart.filter(p => p.ProductID !== cid);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            productLoaderHorizontal(cart,productsContainer);
+        }
+        else{
+            if(ele.classList.contains('increase')){
+                console.log('Quantity increased');
+            }
+            else if(ele.classList.contains('decrease')){
+                console.log('Quantity decreased');
+            }
+        }
     }
+
+    //check if button clicked is 
 });

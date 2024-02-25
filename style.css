@@ -11,10 +11,6 @@ html,body{
     width: 100%;
 }
 
-body{
-    background-color: #111;
-}
-
 header .searchInput{
     padding: 5px;
     border-radius: 20px;
@@ -28,7 +24,17 @@ header .searchInput{
     gap: 1rem;
     padding: 2vh 0;
     justify-items: center;
-    background-color: green;
+    grid-template-rows: auto 1fr;
+}
+#productsContainer .card{
+    display: flex;
+    flex-direction: column;
+}
+#productsContainer .card-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .star{
     color: orange;
