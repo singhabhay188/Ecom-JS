@@ -9,26 +9,70 @@ html,body{
     width: 100%;
 }
 
+:root{
+    --primary-color: #4663AC;
+}
+
 main{
+    padding: 2vh min(2vw,10px);
+}
+
+main>div{
     padding: 2vh min(2vw,10px);
     display: flex;
     justify-content: space-between;
+    gap: 2vw;
     align-items: flex-start;
 }
 
 #productsContainer{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    overflow: hidden;
     gap: 1rem;
     width: max-content;
-    background-color: green;
+    min-width: 50%;
 }
 #productsContainer .card-horizontal{
-    
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 0;
+}
+#productsContainer .card-hori-image-container{
+    width: max-content;
 }
 #productsContainer .card-hori-image-container img{
     object-fit: contain;
 }
-.star{
-    color: orange;
+
+main #totalCost{
+    flex: 1;
+    height: 100%;
+    padding: 2vh min(2vw,10px);
+}
+.j-b{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.j-a{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#mytoast{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+}
+#mytoast.show{
+    opacity: 1;
 }

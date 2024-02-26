@@ -6,6 +6,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+:root{
+    --primary-color: #4663AC;
+}
+
 html,body{
     min-height: 100%;
     width: 100%;
@@ -44,4 +48,29 @@ header .searchInput{
     height: 300px;
     object-fit: contain;
     background-color: white;
+}
+
+
+#mytoast{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+}
+#mytoast.show{
+    opacity: 1;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
 }

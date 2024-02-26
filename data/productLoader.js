@@ -54,7 +54,7 @@ export function productLoaderHorizontal(products,productsContainer){
                     <div class="card-title">${product.Name}</div>
                     <div class="card-description">
                         <p class="card-des">${product.Brand}</p>
-                        <p class="card-price">$${product.NewPrice}<span class="price-strike-through padding-all-8">$${product.OldPrice}</span>
+                        <p class="card-price">$${(product.NewPrice*product.Qty).toFixed(2)}<span class="price-strike-through padding-all-8">$${(product.OldPrice*product.Qty).toFixed(2)}</span>
                             <span class="discount padding-all-8">(${product.Discount}% OFF)</span>
                         </p>
                     </div>
@@ -62,7 +62,7 @@ export function productLoaderHorizontal(products,productsContainer){
                         <p class="q-title">Quantity: </p>
                         <div class="count-container d-flex align-center gap">
                             <button class="count decrease">-</button>
-                            <span class="count-value">1</span>
+                            <span class="count-value">${product.Qty}</span>
                             <button class="count increase">+</button>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ export function productLoaderHorizontal(products,productsContainer){
                         </div>
                         <div class="cta-btn">
                             <button class="button hori-btn btn-outline-primary btn-icon d-flex align-center justify-center gap cursor btn-margin">
-                            ${"Move to ❤️"}</button>
+                            ${"Move to Wishlist"}</button>
                         </div>
                     </div>
             </div>

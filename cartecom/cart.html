@@ -30,14 +30,40 @@
     </header>
 
     <main>
+        <h2 class="heading-2 center">Your Cart</h2>
         <div>
-            <h2 class="heading-2">Your Cart</h2>
             <div id="productsContainer"></div>
-        </div>
-        <div id="totalCost">
-            <h2 class="heading-2">Total: $<span id="totalCostValue">0</span></h2>
+            <div id="totalCost" class="shadow">
+                <h2 class="heading-2">Total</h2>
+                <div class="j-b">
+                    <span id="totalItems">Price (2) items</span>
+                    <span id="totalPrice">$ 5000</span>
+                </div>
+                <div class="j-b">
+                    <span>Discount</span>
+                    <span id="discountPrice">$ 1500</span>
+                </div>
+                <div class="j-b">
+                    <span>Delivery Charge</span>
+                    <span>$ 10</span>
+                </div>
+                <div class="j-b">
+                    <span>Total Amount</span>
+                    <span id="netPrice">$ 3600</span>
+                </div>
+                <div class="j-a" id="savings">
+                    You will Save 1500 on this order
+                </div>
+                <div class="j-a">
+                    <button class="button btn-primary cursor">Place Order</button>
+                </div>
+            </div>
         </div>
     </main>
+
+    <div id="mytoast">
+        Hello
+    </div>
 
 
     <script type="module" src="cart.js"></script>
